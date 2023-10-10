@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+.nav {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logoDiv {
+    padding-right: 5.575rem;
+}
+
+.navLink {
+    color: #00756f;
+    font-size: 1.15rem;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    padding: 0rem 1.95rem 0rem 0.4rem;
+    flex-direction: row;
+}
+
+.navbarflex {
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #00756f;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1rem;
+    padding: 11px;
+    width: 7.85rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: 'Me';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.8s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+@media only screen and (max-width: 768px) {
+
+    .logoDiv {
+        padding-right: 7.85rem;
+    }
+    .button {
+        font-size: 0.975rem;
+        padding: 9px;
+        width: 6.75rem;
+      }
+}
+
+@media only screen and (max-width: 414px) {
+    .navbarItems {
+        display: none;
+    }
+
+    
+.button {
+    font-size: 0.875rem;
+    padding: 8px;
+    width:5.85rem;
+  }
+}
