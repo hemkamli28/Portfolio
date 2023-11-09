@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Montserrat:wght@100&family=Ubuntu:wght@400&family=Inter:wght@180&display=swap');
+
+.contactSection{
+    margin: 2rem;
+}
+.contactTitle{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 2rem;
+    color: #00756f;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.messageForm{
+    padding: 1rem 29rem;
+}
+.messageInput, .email{
+    border: 1px solid #00756f;
+    border-radius: 4px;
+}
+
+.messageInput:focus, .email:focus{
+    border: 1px solid #00756f;
+    box-shadow: 1px 1px 10px #328b87
+}
+.submitBtn{
+    text-align: center;
+}
+.error{
+    color: red;
+}
+.btn{
+    background-color: #00756f;
+    border: 1px solid #00756f;
+    height: 3rem;
+    color: white;
+    font-size: 1.3rem;
+    width: 10rem;
+}
+
+.btn:hover{
+    background-color: #328b87 ;
+    border: 1px solid #00756f;
+    color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .messageForm{
+        padding: 1rem 2rem;
+    }
+}

@@ -1,3 +1,209 @@
-.container{
-  height: 90vh;
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400&family=Inter:wght@200&family=Ubuntu&display=swap');
+
+.heroSection {
+  height: 75vh;
+  margin: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.heroImage {
+  height: 500px;
+  width: 500px;
+}
+
+.heroTitle {
+  text-align: left;
+  color: #455a64;
+  font-family: 'Asap', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 0.79;
+}
+
+.heroTitle span {
+  font-size: 3.78rem;
+  color: #00756f;
+}
+
+.herosubheading {
+  line-height: 1.79;
+  margin-top: 2rem;
+  text-align: left;
+  color: rgb(78, 78, 78);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.35rem;
+}
+
+.socialIcons {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.skillDiv{
+  display: flex;
+  justify-content: space-around;
+}
+.SkillTitle{
+  font-size: 2.75rem;
+  color: #00756f;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+.skillContent{
+  display: flex;
+  align-items: center;
+}
+.skillContent p{
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  color: #455a64;
+}
+.skillContent h4{
+  font-family: 'Roboto', sans-serif;
+  color: #00756f;
+  font-size: 1.75rem;
+
+}
+.skillData{
+  margin: 2.75rem 0rem;
+  max-width: 23rem;
+}
+.techIcons{
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+}
+.techItem{
+  margin: 2rem 2rem 0.85rem 2rem;
+}
+.iconName{
+  color: #455a64;
+}
+.skillSection {
+  margin-top: 7.15rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .heroImage {
+    height: 27rem;
+    width: 27rem;
+  }
+
+  .socialIcons {
+    width: 50%;
+    margin-top: 2rem;
+  }
+
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heroTitle {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    line-height: 0.59;
+    max-width: fit-content;
+  }
+
+  .heroTitle span {
+    font-size: 2.856rem;
+    line-height: 1.2;
+  }
+  .herosubheading {
+    margin-top: 1rem;
+    color: rgb(78, 78, 78);
+    font-size: 1.125rem;
+    text-align: justify;
+  }
+  .techItem{
+    height: 2.35rem;
+    width: 2.35rem;
+  }
+  .skillSection {
+    margin-top: 10rem;
+  }
+  .SkillTitle{
+    font-size: 2.35rem;
+    margin-left: 4rem;
+    text-align: left;
+  }
+  .techIcons{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+  }
+  .techItem{
+    margin: 1.5rem 1.5rem 0.45rem 1.5rem;
+  }
+  .skillContent p{
+    font-size: 1rem;
+  }
+  .skillContent h4{
+    font-size: 1.25rem;
+  }
+  .skillDiv{
+    padding: 0rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .heroImage {
+    height: 18rem;
+    width: 18rem;
+  }
+  .socialIcons {
+    width: 100%;
+    margin: 1.35rem 0rem;
+  }
+
+  .heroTitle {
+    font-size: 1.5rem;
+
+    line-height: 0.5;
+    max-width: fit-content;
+  }
+
+  .heroTitle span {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .herosubheading {
+    margin-top: 1rem;
+    color: rgb(78, 78, 78);
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .heroSection {
+    margin: 10rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+  }
+  .techItem{
+    margin: 2rem 2rem 0.45rem 2rem;
+  }
+  .skillContent p{
+    font-size: 0.85rem;
+  }
+  .skillContent h4{
+    font-size: 1.156rem;
+  }
+  .skillDiv{
+    flex-wrap: wrap;
+  }
+  .skillData{
+    max-width: 18rem;
+  }
+  .SkillTitle{
+    margin-left: 2rem;
+  }
 }

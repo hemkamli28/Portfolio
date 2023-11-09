@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Roboto:wght@500&family=Montserrat:wght@100&family=Inter:wght@180&display=swap');
+
+.projectsTitle {
+  font-size: 2.75rem;
+  color: #00756f;
+  margin: 7rem 0rem 2rem 0rem;
+  font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+.projectsSection{
+  background-image: url('/aboutIm');
+}
+.container {
+  width: 18rem;
+  height: 24rem;
+  perspective: 800px;
+  margin: 1.5rem 1rem;
+}
+
+.container:hover>.card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.projectImage {
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+
+}
+
+.front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.5rem;
+  position: absolute;
+  backface-visibility: hidden;
+  backdrop-filter: blur(10px);
+  /* background: linear-gradient(180deg, #036863b7, #06817b33); */
+  background: linear-gradient(180deg, #d1d1d1b7, #06817b12);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  /* border: 1px solid #03686355; */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.githubLink {
+  color: black;
+  font-size: 2rem;
+}
+
+.back {
+  background: linear-gradient(180deg, #d1d1d1b7, #06817b33);
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cardDesc {
+  color: #2c5f5c;
+  font-size: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-family: 'Asap', sans-serif;
+  color: #024b49;
+}
+
+.techName1,
+.techName2,
+.techName3 {
+  font-size: 0.895rem;
+  padding: 5px;
+}
+
+.techName1 {
+  text-shadow: 0 0 1.2px rgb(105, 4, 4);
+  color: rgb(134, 3, 3);
+}
+
+.techName2 {
+  color: rgb(2, 2, 111);
+  text-shadow: 0 0 1.2px rgb(15, 3, 92);
+}
+
+.techName3 {
+  color: rgb(2, 111, 22);
+  text-shadow: 0 0 1.2px rgb(3, 92, 31);
+}
+
+.projectDesc {
+  padding: 1rem;
+  text-align: justify;
+  display: flex;
+  justify-content: ;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .projectsTitle {
+    text-align: left;
+    font-size: 2.3rem;
+    margin-left: 4rem;
+    margin: 5rem 0rem 1rem 4rem;
+
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .projectsTitle {
+    text-align: left;
+    font-size: 2.3rem;
+    margin: 5rem 0rem 1rem 2rem;
+
+  }
+}

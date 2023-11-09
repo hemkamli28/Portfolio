@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Montserrat:wght@100&family=Ubuntu:wght@400&family=Inter:wght@180&display=swap');
+
+.aboutSection {
+    margin: 3rem 1rem;
+}
+
+.aboutImage {
+    height: 30rem;
+    width: 47rem;
+}
+
+.aboutTitle {
+    font-size: 2.75rem;
+    color: #00756f;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.aboutData {
+    margin-top: 4rem;
+    max-width: 40rem;
+}
+
+.aboutParagraph {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.126rem;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutData {
+        max-width: 100%;
+        margin-top: 1rem;
+        padding: 0rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .aboutData {
+        max-width: 100%;
+        margin-top: 1rem;
+        padding: 0rem 1.5rem;
+    }
+    .aboutImage {
+        height: 20rem;
+        width: 22rem;
+    }
+    
+}
